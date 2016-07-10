@@ -2,8 +2,6 @@
 
 namespace lagbox\settings;
 
-use Setting;
-use Settings;
 use Illuminate\Support\ServiceProvider;
 use lagbox\settings\Events\SettingsSaved;
 use lagbox\settings\Listeners\SettingsListener;
