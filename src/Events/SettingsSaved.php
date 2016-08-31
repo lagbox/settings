@@ -1,6 +1,6 @@
 <?php
 
-namespace lagbox\settings\Events;
+namespace lagbox\Settings\Events;
 
 class SettingsSaved
 {

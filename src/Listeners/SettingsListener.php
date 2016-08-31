@@ -1,9 +1,9 @@
 <?php
 
-namespace lagbox\settings\Listeners;
+namespace lagbox\Settings\Listeners;
 
-use lagbox\settings\Setting;
-use lagbox\settings\Events\SettingsSaved;
+use lagbox\Settings\Setting;
+use lagbox\Settings\Events\SettingsSaved;
 use Illuminate\Contracts\Cache\Repository as Cache;
 
 class SettingsListener

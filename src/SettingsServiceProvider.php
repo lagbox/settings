@@ -1,13 +1,18 @@
 <?php
 
-namespace lagbox\settings;
+namespace lagbox\Settings;
 
 use Illuminate\Support\ServiceProvider;
-use lagbox\settings\Events\SettingsSaved;
-use lagbox\settings\Listeners\SettingsListener;
+use lagbox\Settings\Events\SettingsSaved;
+use lagbox\Settings\Listeners\SettingsListener;
 
 class SettingsServiceProvider extends ServiceProvider
 {
+    /**
+     * Bootstrap anything needed.
+     *
+     * @return void
+     */
     public function boot()
     {
         $this->publishes();
@@ -19,6 +24,11 @@ class SettingsServiceProvider extends ServiceProvider
         $this->app['events']->listen(SettingsSaved::class, SettingsListener::class);
     }
 
+    /**
+     * Register any bindings with the container.
+     *
+     * @return void
+     */
     public function register()
     {
         $this->app->singleton('settings', function ($app) {
@@ -33,6 +43,11 @@ class SettingsServiceProvider extends ServiceProvider
         $this->app->alias('settings', Settings::class);
     }
 
+    /**
+     * Assets to publish.
+     *
+     * @return void
+     */
     protected function publishes()
     {
         $this->publishes([

@@ -1,5 +1,5 @@
 {
-    "name": "lagbox/settings",
+    "name": "lagbox/laravel-settings",
     "description": "Laravel persistent settings",
     "license": "MIT",
     "keywords": ["laravel", "settings"],
@@ -11,16 +11,18 @@
     ],
     "require": {
         "php": ">=5.6",
-        "illuminate/support": "5.2.*",
-        "illuminate/cache": "5.2.*",
-        "illuminate/events": "5.2.*"
+        "illuminate/contracts": "5.1.*|5.2.*|5.3.*",
+        "illuminate/support": "5.1.*|5.2.*|5.3.*",
+        "illuminate/cache": "5.1.*|5.2.*|5.3.*",
+        "illuminate/events": "5.1.*|5.2.*|5.3.*",
+        "illuminate/database": "5.1.*|5.2.*|5.3.*"
     },
     "require-dev": {
         "phpunit/phpunit": "4.0.*"
     },
     "autoload": {
         "psr-4": {
-            "lagbox\\settings\\": "src"
+            "lagbox\\Settings\\": "src"
         },
         "files": [
             "src/helpers.php"

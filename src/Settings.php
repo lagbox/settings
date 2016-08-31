@@ -1,9 +1,9 @@
 <?php
 
-namespace lagbox\settings;
+namespace lagbox\Settings;
 
-use lagbox\settings\Setting;
-use lagbox\settings\Events\SettingsSaved;
+use lagbox\Settings\Setting;
+use lagbox\Settings\Events\SettingsSaved;
 use Illuminate\Contracts\Cache\Repository as Cache;
 use Illuminate\Contracts\Events\Dispatcher as Event;
 use Illuminate\Contracts\Config\Repository as Config;
@@ -30,7 +30,7 @@ class Settings
 
     /**
      * Setting model
-     * @var \lagbox\settings\Setting
+     * @var \lagbox\Settings\Setting
      */
     protected $setting;
 
@@ -64,7 +64,7 @@ class Settings
      * @param \Illuminate\Contracts\Cache\Repository   $cache
      * @param \Illuminate\Contracts\Config\Repository  $config
      * @param \Illuminate\Contracts\Events\Dispatcher $event
-     * @param \lagbox\settings\Setting $setting
+     * @param \lagbox\Settings\Setting $setting
      */
     public function __construct(Cache $cache, Config $config, Event $event, Setting $setting)
     {

@@ -1,10 +1,10 @@
 <?php
 
-namespace lagbox\settings\tests;
+namespace lagbox\Settings\tests;
 
 use Tests\TestCase;
 use Illuminate\Support\Arr;
-use lagbox\settings\Setting;
+use lagbox\Settings\Setting;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 

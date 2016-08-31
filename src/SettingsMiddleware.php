@@ -1,6 +1,6 @@
 <?php
 
-namespace lagbox\settings;
+namespace lagbox\Settings;
 
 use Closure;
 
